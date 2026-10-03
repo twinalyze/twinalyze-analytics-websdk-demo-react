@@ -1,0 +1,108 @@
+export const products = [
+  {
+    id: 'wireless-headphones',
+    name: 'Aero Wireless Headphones',
+    category: 'Audio',
+    price: 129,
+    rating: 4.8,
+    stock: 18,
+    emoji: '🎧',
+    shortDescription: 'Immersive sound with 40-hour battery life.',
+    description:
+      'Aero Wireless Headphones combine clear audio, adaptive noise cancellation, soft memory-foam cushions, and all-day battery life for work and travel.',
+    features: ['Adaptive noise cancellation', '40-hour battery', 'USB-C fast charging'],
+  },
+  {
+    id: 'smart-watch',
+    name: 'Pulse Smart Watch',
+    category: 'Wearables',
+    price: 179,
+    rating: 4.6,
+    stock: 12,
+    emoji: '⌚',
+    shortDescription: 'Fitness, sleep, and notification tracking.',
+    description:
+      'Pulse Smart Watch keeps daily activity, sleep quality, calls, and important alerts visible in a lightweight water-resistant design.',
+    features: ['AMOLED display', '7-day battery', 'Health and sleep tracking'],
+  },
+  {
+    id: 'mechanical-keyboard',
+    name: 'Orbit Mechanical Keyboard',
+    category: 'Workspace',
+    price: 99,
+    rating: 4.9,
+    stock: 25,
+    emoji: '⌨️',
+    shortDescription: 'Compact keyboard with tactile switches.',
+    description:
+      'Orbit is a compact wireless mechanical keyboard designed for focused work, comfortable typing, and fast switching between devices.',
+    features: ['Hot-swappable switches', 'Bluetooth and USB-C', 'Custom shortcut layer'],
+  },
+  {
+    id: 'desk-lamp',
+    name: 'Halo LED Desk Lamp',
+    category: 'Workspace',
+    price: 69,
+    rating: 4.5,
+    stock: 31,
+    emoji: '💡',
+    shortDescription: 'Adjustable lighting with wireless charging.',
+    description:
+      'Halo provides flicker-free adjustable light, touch controls, and an integrated wireless charging pad for a clean desk setup.',
+    features: ['Five brightness levels', 'Three color temperatures', 'Wireless phone charging'],
+  },
+  {
+    id: 'travel-backpack',
+    name: 'Roam Travel Backpack',
+    category: 'Travel',
+    price: 89,
+    rating: 4.7,
+    stock: 20,
+    emoji: '🎒',
+    shortDescription: 'Organized carry-on backpack for daily travel.',
+    description:
+      'Roam includes a padded laptop compartment, quick-access pockets, comfortable straps, and a luggage sleeve for smooth commuting.',
+    features: ['Water-resistant shell', '16-inch laptop sleeve', 'Expandable main compartment'],
+  },
+  {
+    id: 'portable-speaker',
+    name: 'Wave Mini Speaker',
+    category: 'Audio',
+    price: 59,
+    rating: 4.4,
+    stock: 40,
+    emoji: '🔊',
+    shortDescription: 'Portable waterproof speaker with rich sound.',
+    description:
+      'Wave Mini is a compact waterproof Bluetooth speaker made for kitchens, balconies, road trips, and outdoor gatherings.',
+    features: ['IP67 waterproofing', '16-hour battery', 'Stereo pairing'],
+  },
+  {
+    id: 'phone-stand',
+    name: 'Lift Aluminum Phone Stand',
+    category: 'Workspace',
+    price: 35,
+    rating: 4.3,
+    stock: 55,
+    emoji: '📱',
+    shortDescription: 'Adjustable stand for calls and desk use.',
+    description:
+      'Lift keeps your phone at a comfortable viewing angle with a stable aluminum base and foldable travel-friendly design.',
+    features: ['Angle adjustment', 'Foldable design', 'Non-slip silicone pads'],
+  },
+  {
+    id: 'insulated-bottle',
+    name: 'Flow Insulated Bottle',
+    category: 'Lifestyle',
+    price: 42,
+    rating: 4.8,
+    stock: 34,
+    emoji: '🥤',
+    shortDescription: 'Temperature-controlled stainless steel bottle.',
+    description:
+      'Flow keeps drinks cold or hot for hours and includes a leak-resistant lid that fits most cup holders.',
+    features: ['Double-wall insulation', 'Leak-resistant lid', 'BPA-free materials'],
+  },
+];
+
+export const categories = ['All', ...new Set(products.map((product) => product.category))];
